@@ -1,0 +1,637 @@
+/*
+Theme Name:university system
+Theme URI:http://www.icodeguru.pk
+Author: Maria kanwal
+version:1.0
+Author URI:http://www.icodeguru.pk
+description:hello icodeguru
+*/
+
+/* Main Container Styles */
+.main-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.single_post {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.single_post img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.single_post h1 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.single_post p {
+    margin-bottom: 10px;
+}
+
+.single_post .read-more {
+    display: inline-block;
+    padding: 8px 16px;
+    background: #0073aa;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    ;
+}
+
+.single_post .read-more:hover {
+    background: #005b88;
+}
+
+
+
+/* Homepage Styles */
+.homepage {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.homepage h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Grid Layout for Column Layout */
+.hostel-room-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column */
+    gap: 20px; /* Space between cards */
+}
+
+/* Hostel Room Card Styles */
+.hostel-room-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    
+}
+
+.hostel-room-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hostel-room-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hostel-room-info {
+    padding: 15px;
+}
+
+.hostel-room-info h2 {
+    margin: 0 0 10px;
+    font-size: 1.25em;
+}
+
+.hostel-room-info p {
+    margin: 0;
+    color: #666;
+}
+
+
+.logo img{
+    width: 70px;
+    height: 70px;
+    border-radius: 45px;
+    margin-right: 25px;
+    margin-top: 10px;
+
+  }
+  .site title h1{
+    font-size: 30px;
+    margin-bottom: 200px;
+    margin-left: 200px;
+    
+  } 
+  
+
+  
+ 
+
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+header h1 {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+
+
+.navbar-2 {
+    text-align: right;
+    margin-top: 25px;
+    margin-left: 100px;
+    
+}
+
+.navbar-2 ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navbar-2 ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.navbar-2 ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Banner Styles */
+.banner {
+    background: url('banner.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.banner h2 {
+    margin: 0;
+    font-size: 3em;
+}
+
+.banner p {
+    font-size: 1.5em;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .banner h2 {
+        font-size: 2em;
+    }
+
+    .banner p {
+        font-size: 1em;
+    }
+}
+/* slider part */
+
+.main{
+    width: 100%;
+    height: 80vh;
+}
+h1{
+    text-align: center;
+}
+img{
+    width: 100%;
+    height: 100%;
+    background-size:cover ;
+}
+
+/* slider styling */
+
+
+
+
+
+
+
+#slider {
+    position: relative;
+    width: 100%;
+    max-width: 1100px;
+    height: auto;
+    overflow: hidden;
+    margin: auto;
+}
+
+#slider img {
+    width: 100%;
+    height: auto;
+    display: none;
+}
+
+#slider .slide-content {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: black;
+    /* background-color: rgba(0, 0, 0, 0.6); Dark background with some transparency */
+    padding: 10px;
+    font-size: 25px;
+    display: none;
+    /* border-radius: 5px; */
+    text-align: center;
+    margin-bottom: 200px;
+    margin-left: 350px;
+}
+
+/* Media Queries for different screen sizes */
+@media screen and (max-width: 768px) {
+    #slider {
+        height: auto;
+    }
+
+    #slider .slide-content {
+        font-size: 4vw;
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #slider {
+        height: auto;
+    }
+
+    #slider .slide-content {
+        font-size: 3.5vw;
+        margin-bottom: 10px;
+    }
+}
+
+
+/* 
+dives styling */
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    
+    width: 90%;
+    max-width: 1200px;
+  margin-bottom: 5px;
+}
+
+.box {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    flex: 1 1 calc(33.33% - 40px);
+    text-align: center;
+    font-size: 15px;
+   
+    transition: transform 0.3s ease;
+    
+}
+.box1{
+    background-color: #ff6f61; /* Coral */
+   
+}
+.box1 h1{
+    font-size: 20px;
+}
+.box2{
+    background-color: #6b5b95; /* Purple */
+    
+}
+.box2 h1{
+    font-size: 20px;
+}
+.box3{
+    background-color: #88b04b; /* Green */
+}
+.box3 h1{
+    font-size: 20px;
+}
+
+.box:hover {
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 768px) {
+    .box {
+        flex: 1 1 calc(50% - 40px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .box {
+        flex: 1 1 100%;
+    }
+}
+
+
+
+/* body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+} */
+
+.container1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+}
+
+.content, .image {
+    flex: 1;
+    min-width: 300px;
+}
+
+.content {
+    background-color: #f4f4f4;
+    padding: 20px;
+    font-size: 15px;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border: 1px solid #ddd;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+ /* posts styling */
+ .main-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.single_post {
+    width: 30%; /* Adjusting to fit 3 posts in a row */
+    margin-bottom: 30px;
+    padding: 15px;
+    box-sizing: border-box;
+    color: black;
+    text-align: center;
+}
+
+.single_post img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border: 1px solid white;
+}
+
+.single_post h1 {
+    font-size: 20px;
+    margin: 15px 0;
+    color: black;
+}
+
+.single_post p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.single_post .read-more {
+    background-color: white;
+    color: blue;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 0.5px solid black;
+}
+
+.single_post .read-more:hover {
+    background-color: lightblue;
+    color: white;
+}
+
+/* Media Queries for responsiveness */
+@media screen and (max-width: 1024px) {
+    .single_post {
+        width: 45%; /* 2 posts in a row on tablets */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .single_post {
+        width: 100%; /* 1 post in a row on mobile */
+    }
+
+    .single_post h1 {
+        font-size: 18px; /* Slightly smaller heading on mobile */
+    }
+
+    .single_post p {
+        font-size: 14px; /* Slightly smaller paragraph text on mobile */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .single_post {
+        padding: 10px; /* Reduce padding on smaller screens */
+    }
+
+    .single_post .read-more {
+        padding: 8px 16px; /* Adjust button padding on smaller screens */
+        font-size: 14px; /* Smaller font size for the button */
+    }
+}
+
+/* dives 2 styling */
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+.containerd {
+    width: 100%;
+    padding: 10px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+.boxx {
+    width: 30%;
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 10px 0;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.box img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .box {
+        width: 48%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .box {
+        width: 100%;
+    }
+}
+.uon{
+    text-align: center;
+    font-size: 20px;
+}
+.front-page-content {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f7f7f7;
+}
+
+
+
+
+.slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+.slider-caption {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+}
+.glr{
+    background-color: blue;
+}
+
+./* Container for the entire gallery */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Styling for the unordered list of products */
+.products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Creates 4 equal columns */
+    gap: 20px; /* Space between grid items */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Styling for individual product items */
+.products .product {
+    border: 1px solid #ddd; /* Border around each product */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Hide any overflow */
+    transition: transform 0.3s ease; /* Smooth scaling effect */
+}
+
+/* Hover effect to scale up the product */
+.products .product:hover {
+    transform: scale(1.05);
+}
+
+/* Image styling */
+.products .product img {
+    width: 100%; /* Make the image fill the container */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+}
+
+/* Title or other content styling */
+.products .product .woocommerce-loop-product__title {
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* For better responsiveness, adjust columns on smaller screens */
+@media (max-width: 1200px) {
+    .products {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns on medium screens */
+    }
+}
+
+@media (max-width: 900px) {
+    .products {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on small screens */
+    }
+}
+
+@media (max-width: 600px) {
+    .products {
+        grid-template-columns: 1fr; /* 1 column on very small screens */
+    }
+}
